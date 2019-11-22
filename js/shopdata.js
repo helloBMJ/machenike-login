@@ -1,5 +1,7 @@
 define(["jquery","parabola", "jquery-cookie"],function($){
     function download(){
+        sc_left();
+        sc_num();
         $.ajax({
             type: "get",
             url: "data/data.json",
