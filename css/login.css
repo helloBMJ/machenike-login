@@ -1,0 +1,163 @@
+body {
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box
+}
+
+.ns-main .login-info a,
+.ns-text-color {
+    color: #e23435
+}
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.header-box {
+    height: 90px;
+    margin-bottom: 30px
+}
+
+.header-box .header-img {
+    display: inline-block;
+    margin: 15px 0 15px 120px;
+    width: 160px;
+    height: 60px;
+    line-height: 60px
+}
+
+.header-box .header-img img {
+    width: 100%
+}
+
+.ns-main {
+    position: relative
+}
+
+.ns-main .login-info {
+    position: absolute;
+    right: 0;
+    font-size: 14px
+}
+
+.ns-main .phone {
+    position: absolute;
+    color: #e23435;
+    left: 200px;
+    border: 1px solid #898989;
+    width: 126px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: none
+}
+
+.ns-main .content-box {
+    background: #fff;
+    padding: 40px 100px 40px 60px;
+    color: #898989 !important
+}
+
+.ns-main .content-box .back-img {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 0;
+    top: 100px
+}
+
+.ns-main .content-box #tab1 .form-group label,
+.ns-main .content-box #tab1 .form-group-note label {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 38px;
+    vertical-align: middle;
+    font-weight: 400
+}
+
+.ns-main .content-box .back-img img {
+    width: 100%
+}
+
+.ns-main .content-box #tab1 {
+    border: 1px solid #898989;
+    width: 1200px;
+    height: 500px
+}
+
+.ns-main .content-box #tab1 .form-group {
+    margin-top: 30px;
+    height: 41px;
+    margin-bottom: 30px;
+    font-size: 14px
+}
+
+.ns-main .content-box #tab1 .form-group label {
+    width: 150px;
+    height: 38px
+}
+
+.ns-main .content-box #tab1 .form-group input {
+    height: 38px;
+    width: 262px;
+    font-size: 12px;
+    padding-left: 8px;
+    border: 1px solid #cecece
+}
+
+.ns-main .content-box #tab1 .form-group-note {
+    height: 41px;
+    margin-bottom: 30px;
+    font-size: 14px
+}
+
+.ns-main .content-box #tab1 .form-group-note label {
+    width: 150px;
+    height: 38px
+}
+
+.ns-main .content-box #tab1 .form-group-note input {
+    height: 38px;
+    width: 132px;
+    font-size: 12px;
+    padding-left: 8px;
+    border: 1px solid #cecece
+}
+
+.ns-main .content-box #tab1 .form-group-note button {
+    height: 38px
+}
+
+.ns-main .content-box #tab1 .form-btn button {
+    width: 270px;
+    height: 37px;
+    margin-left: 120px;
+    background-color: #e23435;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+}
+
+.ns-main .copyright-main {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto
+}
+.ns-main #canvas{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #333;
+    left: 503px;
+    top:277px;
+}
+.ns-main #btn{
+    display: block;
+    width: 270px;
+    height: 50px;
+    margin: 20px 120px;
+}

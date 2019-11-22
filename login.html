@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册 - 机械师MACHENIKE官方-正品商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/ajax.js"></script>
+    <script src="js/tool.js"></script>
+    <script>
+        window.onload = function(){
+
+            //输入手机号码验证
+            var ophoneNum = document.getElementById("phoneNum");
+            var valueNum = document.getElementById("valueNum");
+            ophoneNum.onmouseleave = function(){
+                var phone = document.getElementById("phoneNum").value;
+    			if(!(/^1[3456789]\d{9}$/.test(phone))){ 
+					valueNum.innerHTML = '手机号码有误，请重填';
+					valueNum.style.color = 'red';
+        			return false; 
+   				}else{
+					valueNum.style.color = 'green';
+					valueNum.innerHTML = '可以使用';
+			   }
+            }
+
+            //密码区域，输入密码
+            var password = document.getElementById("password");
+            var passwordValue = document.getElementById("valuePass");
+            password.onmouseleave = function(){
+                var passValue = password.value;
+                //至少8-16个字符，至少1个大写字母，1个小写字母和1个数字，其他可以是任意字符：
+                if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/.test(passValue))){
+                    passwordValue.innerHTML = "密码有误，请重新输入";
+                    passwordValue.style.color = "red";
+                }else{
+					passwordValue.style.color = 'green';
+					passwordValue.innerHTML = '可以使用';
+                }
+            }
+            //确认密码
+
+            var repassword = document.getElementById("repassword");
+            var valueRepass = document.getElementById("valueRepass");
+            repassword.onmouseleave = function(){
+                if(repassword.value.toLowerCase() == password.value.toLowerCase()){
+                    valueRepass.innerHTML = "密码一致";
+					valueRepass.style.color = 'green';
+                }else{
+                    valueRepass.innerHTML = "密码不一致";
+					valueRepass.style.color = 'red';
+                }
+            }
+
+            //验证码
+            var authCode = document.getElementById("authCode");
+            var canvas = document.getElementById("canvas");
+            var oBtn = document.getElementById("btn");
+            var codeValue = document.getElementById("codeValue");
+            oBtn.onclick = function(){
+                var str = testCode(6);
+                draw(str);
+            }
+                authCode.onmouseleave = function(){
+                //验证码对比
+                    if(authCode.value.toLowerCase() == str.toLowerCase()){
+                        codeValue.innerHTML = "验证码正确";
+                        codeValue.style.color = "green";
+                    }else{
+                        codeValue.innerHTML = "验证码错误";
+                        codeValue.style.color = "red";
+                    }
+                }
+			var str = testCode(6);
+                draw(str);
+                
+            //进行服务器提交
+            var agreed = document.getElementById("agreed");
+            var oInputs = document.getElementsByTagName("input");
+            agreed.onclick = function(){
+                // alert(oInputs.length);
+                var oInputs = document.getElementsByTagName("input");
+                $ajax({
+                    method: "post",
+                    url: "./php/login.php",
+                    data: {
+                        phoneNum: oInputs[0].value,
+                        password: oInputs[1].value,
+                        repassword: oInputs[2].value,
+                        authCode: oInputs[3].value,
+                        creatTime: (new Date()).getTime()
+                    },
+                    success: function(result){
+                        // alert(result);
+                       var obj = (JSON.parse(result));
+                    //    console.log(obj)
+                       if(obj.code){
+                           alert(obj.message);
+                       }else{
+                           alert("注册成功")
+                       }
+                    },
+                    error: function(msg){
+                        alert(msg);
+                    }
+                })
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header-box w1200">
+        <a href="" class="header-img">
+            <img src="images/2019101201421823699.jpg" alt="">
+        </a>
+    </div>
+    <div class="ns-main w1200">
+        <p class="login-info">
+            <span>我已注册，现在就</span>
+            <a href="register.html">登录</a>
+        </p>
+        <p class="phone">手机注册</p>
+        <div class="content-box">
+            <div id="tab1">
+                <div class="form-group">
+                    <label for=""><span class="ns-text-color">*</span><span class="js-lable">手机号码：</span></label>
+                    <input type="text" placeholder="请输入手机号码" id="phoneNum">
+                    <span id="valueNum">请输入手机号码</span>
+                </div>
+                <div class="form-group">
+                    <label for=""><span class="ns-text-color">*</span><span class="js-lable">密码：</span></label>
+                    <input type="password" placeholder="请输入密码" id="password">
+                    <span id="valuePass">请输入密码</span>
+                </div>
+                <div class="form-group">
+                    <label for=""><span class="ns-text-color">*</span><span class="js-lable">确认密码：</span></label>
+                    <input type="password" placeholder="请重新输入密码" id="repassword">
+                    <span id="valueRepass">请重新输入密码</span>
+                </div>
+                <div class="form-group-note">
+                    <label for=""><span class="ns-text-color">*</span><span class="js-lable">验证码：</span></label>
+                    <input type="text" id="authCode">
+                    <span id="codeValue">请输入验证码</span>
+                    <button id="btn">获取验证码</button>
+                </div>
+                <div class="form-btn" >
+                    <button id="agreed">同意并注册</button>
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+            <a href="" class="back-img">
+                <img src="images/samll1.jpg" alt="">
+            </a>
+        </div>
+        <div class="copyright-main w1200">
+            <p>Copyright © 2015-2019 机械师商城 版权所有 保留一切权利备案号：鲁ICP备14032650号-1</p>
+        </div>
+    </div>
+</body>
+</html>

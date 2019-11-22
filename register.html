@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录 - 机械师MACHENIKE官方-正品商城</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/tool.js"></script>
+    <script src="js/ajax.js"></script>
+    <script>
+        window.onload = function(){
+            var authCode = document.getElementById("authCode");
+            var canvas = document.getElementById("canvas");
+			var aInputs = document.getElementsByTagName("input");
+            var Btn = document.getElementById("btn-login");
+            canvas.onclick = function(){
+                var str = testCode(6);
+                draw(str);
+            }
+            authCode.onmouseleave = function(){
+                //验证码对比
+                    var judge = authCode.value.toLowerCase() == str.toLowerCase();
+                if(!judge){
+                    authCode.style.color = "red";
+                    authCode.onclick = function(){
+                        authCode.innerHTML = "";
+                    }
+                }else{
+                    authCode.style.color = "green";
+                }
+            }
+            var str = testCode(6);
+            draw(str);
+
+            var phoneNum = document.getElementById("phoneNum");
+            phoneNum.onblur = function(){
+                var num = phoneNum.value
+                if(!(/^1[3456789]\d{9}$/.test(num))){
+                    alert("手机号码填写有误,请重新输入");
+                }
+            }
+
+            var password = document.getElementById("password");
+            password.onblur = function(){
+                if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{8,16}$/.test(password.value))){
+                    alert("密码输入错误")
+                }
+            }
+
+            //后台
+            Btn.onclick = function(){
+                $ajax({
+                method: "post",
+                url: "./php/register.php",
+                data: {
+                    phoneNum: aInputs[0].value,
+                    password: aInputs[1].value
+                },
+                success: function(result){
+                    var obj = JSON.parse(result);
+                    if(obj.code){
+                        alert(obj.message);
+                    }else{
+                        alert("登录成功");
+                        setTimeout(function(){
+                            location.assign("../index.html")
+                        },500)
+                    }
+                },
+                error: function(msg){
+                    alert(msg)
+                }
+            })
+        }
+            
+    }
+    </script>
+</head>
+<body>
+    <div class="user-header w1200">
+        <div class="log-box">
+            <a href=""><img src="images/2019101201421823699.jpg" alt=""></a>
+            <span>欢迎登录</span>
+        </div>
+        <div class="reg">
+            <span>没有账号？</span>
+            <a href="login.html">立即注册</a>
+        </div>
+    </div>
+    <div class="mian w1200">
+        <img src="images/register.jpg" alt="">
+        <div class="login">
+            <div class="login-header">
+                <a href="" class="tit-l">手机快捷登录</a>
+                <a href="" class="tit-r">账号登录</a>
+            </div>
+            <div class="type-box">
+                <div class="login-type">
+                    <div class="input-box">
+                    <input type="text" placeholder="手机号/会员名/邮箱" id="phoneNum">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入密码" id="password">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入验证码" id="authCode">
+                </div>
+                    <span class="forget-password">忘记密码?</span>
+                    <button id="btn-login">登录</button>
+                    <div class="btn-bottom"></div>
+                </div>
+                <canvas id="canvas" style="width: 100px; height: 40px; border: 1px solid #333; position: absolute; bottom: 100px;"></canvas>
+            </div>
+            <!-- 账号登录 -->
+            <!-- <div class="type-box">
+                <div class="input-box">
+                    <input type="text" placeholder="手机号/会员名/邮箱">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入密码">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入验证码">
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="copyright-main w1200">
+        <p>Copyright © 2015-2019 机械师商城 版权所有 保留一切权利备案号：鲁ICP备14032650号-1</p>
+    </div>
+</body>
+</html>

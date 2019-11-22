@@ -1,0 +1,186 @@
+{
+    "navArr": [
+        {
+            "title": "笔记本",
+            "childs": [
+                {
+                    "pic": "images/1.jpg",
+                    "title": "机械师F117-VCi1p游戏本",
+                    "pirce": "8399.00"
+                },
+                {
+                    "pic": "images/firstbox1.jpg",
+                    "title": "机械师T90 PLUS电竞游戏本",
+                    "pirce": "9069.00"
+                },
+                {
+                    "pic": "images/hot1.jpg",
+                    "title": "机械师T90-TB2p游戏本",
+                    "pirce": "6900.00"
+                },
+                {
+                    "pic": "images/nav2.jpg",
+                    "title": "机械师T58-VCI1p游戏本",
+                    "pirce": "8699.00"
+                },
+                {
+                    "pic": "images/1.jpg",
+                    "title": "机械师T58-VB游戏本",
+                    "pirce": "6799.00"
+                },
+                {
+                    "pic": "images/1.jpg",
+                    "title": "机械师F117-BB 游戏笔记本",
+                    "pirce": "7499.00"
+                }
+            ]
+        },
+        {
+            "title": "电脑主机",
+            "childs": [
+                {
+                    "pic": "images/nav12jpg.jpg",
+                    "title": "机械师F117-D台式机电脑",
+                    "pirce": "4899.00"
+                },
+                {
+                    "pic": "images/zhuji1.jpg",
+                    "title": "机械师T90台式机电脑",
+                    "pirce": "4999.00"
+                },
+                {
+                    "pic": "images/xianshiqi.jpg",
+                    "title": "机械师 144Hz电竞显示器",
+                    "pirce": "1399.00"
+                },
+                {
+                    "pic": "images/1.jpg",
+                    "title": "机械师F117-V 水冷台式机",
+                    "pirce": "7499.00"
+                }
+            ]
+        },
+        {
+            "title": "智潮产品",
+            "childs": [
+                {
+                    "pic": "images/killshubiao.jpg",
+                    "title": "机械师M5 电竞游戏鼠标",
+                    "pirce": "99.00"
+                },
+                {
+                    "pic": "images/killjianpan.jpg",
+                    "title": "机械师K7机械键盘",
+                    "pirce": "199.00"
+                },
+                {
+                    "pic": "images/dianzi.jpg",
+                    "title": "机械师金属鼠标垫",
+                    "pirce": "29.00"
+                },
+                {
+                    "pic": "images/taozhuang.jpg",
+                    "title": "机械师 情侣版定制 套装",
+                    "pirce": "159.00"
+                },
+                {
+                    "pic": "images/nav17.jpg",
+                    "title": "机械师电竞耳机【听风者】",
+                    "pirce": "199.00"
+                },
+                {
+                    "pic": "images/beibao.jpg",
+                    "title": "机械师宇航员 笔记本双肩背包",
+                    "pirce": "99.00"
+                }
+            ]
+        }
+    ],
+    "flashdeals": [
+        {
+            "childs": [
+                {
+                    "img": "images/upan.jpg",
+                    "title": "机械师高速金属U盘",
+                    "left": "39.00",
+                    "right": "49.00"
+                },
+                {
+                    "img": "images/killjianpan.jpg",
+                    "title": "机械师K7 游戏机械键盘",
+                    "left": "199.00",
+                    "right": "199.00"
+                },
+                {
+                    "img": "images/killshubiao.jpg",
+                    "title": "机械师 M7无线游戏鼠标",
+                    "left": "99.00",
+                    "right": "99.00"
+                },
+                {
+                    "img": "images/killyan.jpg",
+                    "title": "机械师气囊式眼部按摩仪",
+                    "left": "199.00",
+                    "right": "199.00"
+                },
+                {
+                    "img": "images/killbao.jpg",
+                    "title": "机械师空间站 双肩电脑包",
+                    "left": "299.00",
+                    "right": "299.00"
+                }
+            ]
+        }
+    ],
+    "shopBox": [
+        {   
+            "id": "0",
+            "img": "images/scroll1.jpg",
+            "title": "机械师F117-VCi1p游戏本"
+        },{   
+            "id": "1",
+            "img": "images/firstbox1.jpg",
+            "title": "机械师F117-VCi1p游戏本"
+        },{   
+            "id": "2",
+            "img": "images/hot1.jpg",
+            "title": "机械师F117-VCi1p游戏本"
+        },{   
+            "id": "3",
+            "img": "images/killbao.jpg",
+            "title": "机械师F117-VCi1p游戏本"
+        },{   
+            "id": "4",
+            "img": "images/killjianpan.jpg",
+            "title": "秒杀键盘"
+        },{   
+            "id": "5",
+            "img": "images/killshubiao.jpg",
+            "title": "宇宙无敌钛合金鼠标"
+        },{   
+            "id": "6",
+            "img": "images/nav1.jpg",
+            "title": "机械师T89-打电脑"
+        },{   
+            "id": "7",
+            "img": "images/killbao.jpg",
+            "title": "机械师T89-打电脑09090"
+        }
+    ],
+    "shopList": [
+        {
+            "id": "0",
+            "img": "images/killbao.jpg",
+            "title": "机械师宇航员 笔记本双肩背包"
+        },{
+            "id": "1",
+            "img": "images/killbao.jpg",
+            "title": "机械师宇航员 笔记本双肩背包"
+        },{
+            "id": "2",
+            "img": "images/killbao.jpg",
+            "title": "机械师宇航员 笔记本双肩背包"
+        }
+    ]
+
+}

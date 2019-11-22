@@ -1,0 +1,247 @@
+{
+    "content": [
+        {
+            "childs":[
+                {
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/nav6.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥7999.00"
+                },{
+                    "img": "images/nav7.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥8999.00"
+                },{
+                    "img": "images/nav8.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥9999.00"
+                },{
+                    "img": "images/nav9.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                }
+            ]
+        }
+    ],
+
+
+
+
+    "hot": [
+        {
+            "childs": [
+                {
+                    "img": "images/upan.jpg",
+                    "title": "机械师高速金属U盘",
+                    "left": "39.00",
+                    "right": "49.00"
+                },{
+                    "img": "images/killjianpan.jpg",
+                    "title": "啥瞎你眼键盘",
+                    "left": "39.00",
+                    "right": "49.00"                   
+                },{
+                    "img": "images/killshubiao.jpg",
+                    "title": "钛合金鼠标",
+                    "left": "399.00",
+                    "right": "499.00"                   
+                },{
+                    "img": "images/killyan.jpg",
+                    "title": "钛合金眼罩",
+                    "left": "399.00",
+                    "right": "499.00"                   
+                },{
+                    "img": "images/killshubiao.jpg",
+                    "title": "钛合金鼠标",
+                    "left": "399.00",
+                    "right": "499.00"                   
+                }
+            ]      
+        }
+    ],
+
+
+    "Recommend": [
+        {
+            "childs": [
+                {
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                },{
+                    "img": "images/1.jpg",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "￥6999.00"
+                }
+            ]
+        }
+    ],
+
+    "hotshop": [
+        {
+            "childs": [
+                {
+                    "img": "images/hot1.jpg",
+                    "content": "产品还不错哦，筛选了好几天，终于选定了机械师的，总算没失望(*^▽^*)",
+                    "title": "机械师T58-VAF8游戏本",
+                    "pirce": "5999.00"
+                },{
+                    "img": "images/nav5.jpg",
+                    "content": "产品还不错哦，筛选了好几天，终于选定了机械师的，总算没失望(*^▽^*)",
+                    "title": "机械师T90-TB2p游戏本",
+                    "pirce": "7299.00"
+                },{
+                    "img": "images/nav8.jpg",
+                    "content": "产品还不错哦，筛选了好几天，终于选定了机械师的，总算没失望(*^▽^*)",
+                    "title": "机械师F117-VB1P 游戏笔记本",
+                    "pirce": "6999.00"
+                },{
+                    "img": "images/nav7.jpg",
+                    "content": "产品还不错哦，筛选了好几天，终于选定了机械师的，总算没失望(*^▽^*)",
+                    "title": "机械师T90 Plus TB1p 17.3英寸笔记本",
+                    "pirce": "8399.00"
+                }
+            ]
+        }
+    ],
+
+    "video": [
+        {
+        "childs": [
+            {
+                "img": "images/zhengzhou.jpg",
+                "title": "机械师极速前进绿城行动-郑州站",
+                "p": "2019.10.23 聚郑州 享美食"
+            },{
+                "img": "images/new.jpg",
+                "title": "开启游戏本全面屏时代",
+                "p": "机械师2018春季新品发布会"
+            },{
+                "img": "images/20171.jpg",
+                "title": "机械师笔记本-2017与粉丝的点滴",
+                "p": "不忘初心 砥砺前行"
+            },{
+                "img": "images/jisu.png",
+                "title": "机械师急速前行",
+                "p": "机械师急速前行，我们来了！"
+            }
+        ]
+    }
+    ],
+
+    "classify": [
+        {
+            "title": "游戏笔记本",
+            "childs": [
+                {
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                },{
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                },{
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "title": "创意设计本",
+            "childs": [
+                {
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                },{
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "title": "电竞主机",
+            "childs": [
+                {
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "title": "设计主机",
+            "childs": [
+                {
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "title": "智潮商品",
+            "childs": [
+                {
+                    "title": "PX780",
+                    "content": [
+                        {
+                            "img": "images/nav1.jpg",
+                            "span": "PX780"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
